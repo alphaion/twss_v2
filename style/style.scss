@@ -1,0 +1,119 @@
+// fonts
+@font-face {
+    font-family: "Cinzel";
+    src: url("../resources/fonts/Cinzel/static/Cinzel-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../resources/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+// colors
+$primary-col: #FFE8D6;
+$secondary-col: #FF9E52;
+$accent-col: #282A23;
+$basic-col: #ffffff;
+$text-col: #4D2200;
+
+// basic
+body {
+    margin: 0;
+    padding: 0;
+}
+.brand{
+    cursor: pointer;
+}
+.p-cinzel {
+    font-family: "Cinzel";
+    color: $primary-col;
+    letter-spacing: 0.06em;
+}
+
+.p-light {
+    font-family: "Poppins-Regular";
+    color: $primary-col;
+    cursor: pointer;
+}
+
+.p-light:hover {
+    font-family: "Poppins-Regular";
+    color: $secondary-col;
+}
+
+.p-normal {
+    font-family: "Poppins-Regular";
+    color: $text-col;
+}
+
+.p-normal:hover {
+    font-family: "Poppins-Regular";
+    color: $primary-col;
+    background-color: $secondary-col;
+}
+
+header {
+    background-color: $accent-col;
+    color: $primary-col;
+}
+
+.btn {
+    width: 148px;
+    height: 54px;
+    background-color: $primary-col;
+    color: $accent-col;
+}
+
+// code
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    width: 100%;
+    height: 120vh;
+    background-color: $accent-col;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
+main .container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+main .container .woolf-image {
+    margin: 0 auto;
+    position: sticky;
+    z-index: 99;
+}
+
+main .container .ellipse-image {
+    margin: -10em auto;
+    margin-bottom: -3em;
+    z-index: -99;
+}
+
+main .container .heading {
+    width: 80%;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 110px;
+    letter-spacing: 0.03em;
+}
+
+@media only screen and (max-width: 720px) {
+    main .container .heading {
+        width: 90%;
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 70px;
+        line-height: 80px;
+    }
+  }

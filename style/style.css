@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Cinzel";
+  src: url("../resources/fonts/Cinzel/static/Cinzel-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../resources/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.brand {
+  cursor: pointer;
+}
+
+.p-cinzel {
+  font-family: "Cinzel";
+  color: #FFE8D6;
+  letter-spacing: 0.06em;
+}
+
+.p-light {
+  font-family: "Poppins-Regular";
+  color: #FFE8D6;
+  cursor: pointer;
+}
+
+.p-light:hover {
+  font-family: "Poppins-Regular";
+  color: #FF9E52;
+}
+
+.p-normal {
+  font-family: "Poppins-Regular";
+  color: #4D2200;
+}
+
+.p-normal:hover {
+  font-family: "Poppins-Regular";
+  color: #FFE8D6;
+  background-color: #FF9E52;
+}
+
+header {
+  background-color: #282A23;
+  color: #FFE8D6;
+}
+
+.btn {
+  width: 148px;
+  height: 54px;
+  background-color: #FFE8D6;
+  color: #282A23;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+  height: 120vh;
+  background-color: #282A23;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
+main .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+main .container .woolf-image {
+  margin: 0 auto;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 99;
+}
+
+main .container .ellipse-image {
+  margin: -10em auto;
+  margin-bottom: -3em;
+  z-index: -99;
+}
+
+main .container .heading {
+  width: 80%;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 110px;
+  letter-spacing: 0.03em;
+}
+
+@media only screen and (max-width: 720px) {
+  main .container .heading {
+    width: 90%;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 80px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
