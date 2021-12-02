@@ -37,7 +37,9 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-
+span{
+    font-weight: 600;
+}
 a:hover {
     color: $secondary-col;
 }
