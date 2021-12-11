@@ -45,8 +45,12 @@ span{
 a:hover {
     color: $secondary-col;
 }
-
-.p-cinzel {
+.p-cinzel-dark{
+    font-family: "Cinzel";
+    color: $text-col;
+    letter-spacing: 0.06em;
+}
+.p-cinzel-light {
     font-family: "Cinzel";
     color: $primary-col;
     letter-spacing: 0.06em;
@@ -56,6 +60,13 @@ a:hover {
     font-family: "Poppins-Regular";
     color: $primary-col;
     font-size: 14px;
+    line-height: 28px;
+}
+.p-dark-14 {
+    font-family: "Poppins-Regular";
+    color: $text-col;
+    font-size: 14px;
+    line-height: 28px;
 }
 
 .p-dark-18 {
@@ -63,10 +74,23 @@ a:hover {
     color: $text-col;
     font-size: 18px;
 }
-
+.p-dark-18-bold {
+    font-family: "Poppins-Regular";
+    color: $text-col;
+    font-size: 18px;
+    font-weight: bold;
+}
 header {
     background-color: $accent-col;
     color: $primary-col;
+}
+
+.icon-bg{
+    background-color: $secondary-col;
+}
+
+.dark-bg{
+    background-color: $accent-col;
 }
 
 // Primary Buttons
@@ -90,6 +114,7 @@ header {
     width: 148px;
     height: 54px;
     font-size: 16px;
+    border: 1.2px solid $accent-col;
     font-family: "Poppins-Regular";
     background-color: $primary-col;
     color: $accent-col;
@@ -108,9 +133,10 @@ header {
 main {
     width: 100%;
     height: auto;
-    padding-bottom: 15em;
+    padding-bottom: 12em;
     background-color: $accent-col;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    // clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
 }
 
 main .container {
@@ -126,7 +152,12 @@ main .container .woolf-image {
     position: sticky;
     z-index: 99;
 }
-
+.current-read{
+    width: 230px;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: 25px 25px 30px #4d210021;
+}
 main .container .ellipse-image {
     margin: -10em auto;
     margin-bottom: -3em;
@@ -162,14 +193,18 @@ section .section{
 }
 
 .caption{
-    width: 100%;
-    margin: 2em 0em 0em 0em;
+    margin: 1em auto;
     font-family: "Poppins-Regular";
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+    color: $text-col;
 }
 
+.post-img {
+    width: 450px;
+    height: 360px;
+}
 @media only screen and (max-width: 720px) {
     main .container .heading {
         width: 90%;

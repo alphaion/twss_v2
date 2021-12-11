@@ -43,7 +43,13 @@ a:hover {
   color: #FF9E52;
 }
 
-.p-cinzel {
+.p-cinzel-dark {
+  font-family: "Cinzel";
+  color: #4D2200;
+  letter-spacing: 0.06em;
+}
+
+.p-cinzel-light {
   font-family: "Cinzel";
   color: #FFE8D6;
   letter-spacing: 0.06em;
@@ -53,6 +59,14 @@ a:hover {
   font-family: "Poppins-Regular";
   color: #FFE8D6;
   font-size: 14px;
+  line-height: 28px;
+}
+
+.p-dark-14 {
+  font-family: "Poppins-Regular";
+  color: #4D2200;
+  font-size: 14px;
+  line-height: 28px;
 }
 
 .p-dark-18 {
@@ -61,9 +75,24 @@ a:hover {
   font-size: 18px;
 }
 
+.p-dark-18-bold {
+  font-family: "Poppins-Regular";
+  color: #4D2200;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 header {
   background-color: #282A23;
   color: #FFE8D6;
+}
+
+.icon-bg {
+  background-color: #FF9E52;
+}
+
+.dark-bg {
+  background-color: #282A23;
 }
 
 .primary-btn {
@@ -86,6 +115,7 @@ header {
   width: 148px;
   height: 54px;
   font-size: 16px;
+  border: 1.2px solid #282A23;
   font-family: "Poppins-Regular";
   background-color: #FFE8D6;
   color: #282A23;
@@ -104,7 +134,7 @@ header {
 main {
   width: 100%;
   height: auto;
-  padding-bottom: 15em;
+  padding-bottom: 12em;
   background-color: #282A23;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -127,6 +157,14 @@ main .container .woolf-image {
   position: -webkit-sticky;
   position: sticky;
   z-index: 99;
+}
+
+.current-read {
+  width: 230px;
+  height: 360px;
+  border-radius: 10px;
+  -webkit-box-shadow: 25px 25px 30px #4d210021;
+          box-shadow: 25px 25px 30px #4d210021;
 }
 
 main .container .ellipse-image {
@@ -168,12 +206,17 @@ section .section {
 }
 
 .caption {
-  width: 100%;
-  margin: 2em 0em 0em 0em;
+  margin: 1em auto;
   font-family: "Poppins-Regular";
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  color: #4D2200;
+}
+
+.post-img {
+  width: 450px;
+  height: 360px;
 }
 
 @media only screen and (max-width: 720px) {
