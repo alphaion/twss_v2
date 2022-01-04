@@ -24,12 +24,12 @@ body {
     background-color: $primary-col;
 }
 
-::selection{
-    background-color: $accent-col ;
+::selection {
+    background-color: $accent-col;
     color: $primary-col;
 }
 
-.brand{
+.brand {
     cursor: pointer;
     font-style: normal;
     font-weight: normal;
@@ -39,17 +39,21 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-span{
+
+span {
     font-weight: 600;
 }
+
 a:hover {
     color: $secondary-col;
 }
-.p-cinzel-dark{
+
+.p-cinzel-dark {
     font-family: "Cinzel";
     color: $text-col;
     letter-spacing: 0.06em;
 }
+
 .p-cinzel-light {
     font-family: "Cinzel";
     color: $primary-col;
@@ -62,6 +66,7 @@ a:hover {
     font-size: 14px;
     line-height: 28px;
 }
+
 .p-dark-14 {
     font-family: "Poppins-Regular";
     color: $text-col;
@@ -74,22 +79,31 @@ a:hover {
     color: $text-col;
     font-size: 18px;
 }
+
 .p-dark-18-bold {
     font-family: "Poppins-Regular";
     color: $text-col;
     font-size: 18px;
     font-weight: bold;
 }
+
+.line {
+    width: 120px;
+    height: 4px;
+    background-color: $accent-col;
+    border-radius: 10px;
+}
+
 header {
     background-color: $accent-col;
     color: $primary-col;
 }
 
-.icon-bg{
+.icon-bg {
     background-color: $secondary-col;
 }
 
-.dark-bg{
+.dark-bg {
     background-color: $accent-col;
 }
 
@@ -103,6 +117,7 @@ header {
     background-color: $accent-col;
     color: $primary-col;
 }
+
 .primary-btn:hover {
     border: 1.5px solid $accent-col;
     background-color: $secondary-col;
@@ -119,6 +134,7 @@ header {
     background-color: $primary-col;
     color: $accent-col;
 }
+
 .secondary-btn:hover {
     background-color: $secondary-col;
     color: $accent-col;
@@ -152,12 +168,14 @@ main .container .woolf-image {
     position: sticky;
     z-index: 99;
 }
-.current-read{
+
+.current-read {
     width: 230px;
     height: 360px;
     border-radius: 10px;
     box-shadow: 25px 25px 30px #4d210021;
 }
+
 main .container .ellipse-image {
     margin: -10em auto;
     margin-bottom: -3em;
@@ -174,7 +192,7 @@ main .container .heading {
     letter-spacing: 0.03em;
 }
 
-section .section{
+section .section {
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -192,7 +210,7 @@ section .section{
     font-weight: normal;
 }
 
-.caption{
+.caption {
     margin: 1em auto;
     font-family: "Poppins-Regular";
     font-size: 14px;
@@ -205,6 +223,29 @@ section .section{
     width: 450px;
     height: 360px;
 }
+
+.post-cover {
+    height: 380px;
+    background-image:
+        linear-gradient(45deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../resources/images/book-post/the-midnight-library.png');
+    object-fit: contain;
+    object-position: center;
+    background-position: center center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.post-cover h1 {
+    opacity: 1;
+    color: $primary-col;
+    padding: 1em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 720px) {
     main .container .heading {
         width: 90%;
@@ -214,4 +255,4 @@ section .section{
         font-size: 70px;
         line-height: 80px;
     }
-  }
+}

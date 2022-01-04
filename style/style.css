@@ -82,6 +82,13 @@ a:hover {
   font-weight: bold;
 }
 
+.line {
+  width: 120px;
+  height: 4px;
+  background-color: #282A23;
+  border-radius: 10px;
+}
+
 header {
   background-color: #282A23;
   color: #FFE8D6;
@@ -217,6 +224,39 @@ section .section {
 .post-img {
   width: 450px;
   height: 360px;
+}
+
+.post-cover {
+  height: 380px;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../resources/images/book-post/the-midnight-library.png");
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  background-position: center center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post-cover h1 {
+  opacity: 1;
+  color: #FFE8D6;
+  padding: 1em;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (max-width: 720px) {
